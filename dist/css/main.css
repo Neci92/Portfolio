@@ -317,12 +317,6 @@ main#home h1 {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px;
-  }
-
   .container {
     width: 90%;
   }
@@ -398,9 +392,11 @@ div.menu-branding.show {
     font-size: 3.5rem;
   }
 
+  .menu-nav {
+    padding: 1rem;
+  }
+
   .nav-item:nth-child(4) {
-    font-size: 1.25rem;
-    margin: auto 1rem;
     text-align: center;
   }
 
