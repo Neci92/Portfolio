@@ -398,6 +398,10 @@ div.menu-branding.show {
 
   .nav-item {
     text-align: center;
+    margin-bottom: 0;
+  }
+  .nav-item .nav-link {
+    font-size: 1.75rem;
   }
 
   .projects {
