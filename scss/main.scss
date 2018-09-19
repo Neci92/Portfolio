@@ -15,6 +15,11 @@ body {
   line-height: 1.5;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 // Headings
 h1,
 h2,
@@ -47,23 +52,25 @@ header {
   color: $secondary-color;
 }
 
+.icons {
+  margin-top: 1rem;
+
+  a {
+    padding: 0.4rem;
+
+    &:hover {
+      color: $secondary-color;
+      @include easeOut();
+    }
+  }
+}
+
 main {
   padding: 4rem;
   // height: 100%;
   min-height: calc(100vh - 60px);
 
-  .icons {
-    margin-top: 1rem;
 
-    a {
-      padding: 0.4rem;
-
-      &:hover {
-        color: $secondary-color;
-        @include easeOut();
-      }
-    }
-  }
 
   &#home {
     overflow: hidden;
@@ -79,7 +86,7 @@ main {
   grid-template-areas:
     'bioimage bio bio'
     'job1 job2 job3';
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
     grid-area: bioimage;
