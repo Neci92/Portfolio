@@ -64,7 +64,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color-with-opacity, 5);
+    background: darken($primary-color-with-opacity, 20);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -96,6 +96,7 @@
   }
 
   .nav-item {
+    margin-bottom: 1rem;
     transform: translate3d(600px, 0, 0);
     @include easeOut;
 
@@ -127,7 +128,7 @@
 }
 
 // Delay each nav item slide by 0.1s
-@for $x from 1 through 4 {
+@for $x from 1 through 6 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
   }
