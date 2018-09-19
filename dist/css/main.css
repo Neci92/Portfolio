@@ -317,6 +317,12 @@ main#home h1 {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px;
+  }
+
   .container {
     width: 90%;
   }
